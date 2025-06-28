@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="cardholder">
+      <div class="imgcard"><img src="./photo-1581090464777-f3220bbe1b8b.jpg" alt=""></div>
+     
+      <div class="normalcard">
+        <h1>Welcome to Edutech!</h1>
+        <p>Please Fill The Fields To Login</p>
+
+        <div class="input-group">
+            <label class="label">Email</label>
+            <input type="email" class="input-field" id="email" placeholder="edutech12@gmail.com">
+        </div>
+
+        <div class="input-group">
+            <label class="label">Password</label>
+            <input type="password" class="input-field"  id="password"  placeholder="password">
+        </div>
+        <button class="login-button" onclick="logIn()">Login</button>
+
+      </div>  
+    </div>
+
+
+
+
+
+    <script>
+
+      function logIn(){
+        const email = document.getElementById('email').value;
+        const password= document.getElementById('password').value;
+        if(email && password){
+          if(email.includes('@') && email.includes('.', email.indexOf('@'))) {
+          
+            const storedPassword = localStorage.getItem(email);
+          
+            if(storedPassword === password) {
+              window.location.href = "welcome.html";
+            }else{
+              alert('invalid email or password');
+            }
+
+          }else {
+            alert('invalid email format');
+          }
+        }else{
+          alert('please fill the required field');
+        }
+
+
+      } 
+    </script>
+</body>
+</html>

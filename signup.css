@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardholder{
+    width: 550px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+}
+
+.imgcard{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(97, 97, 224);
+
+}
+
+.imgcard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.normalcard{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+
+}
+.normalcard h1{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+.normalcard p{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.input-group{
+    margin-top: 20px;
+}
+
+
+.input-field{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    outline: 0.5px solid rgb(9, 9, 245);
+    
+}
+.label{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+.signup-button{
+width: 100px;
+height: 30px;
+background-color: rgb(115, 115, 238);
+color: white; 
+padding: 10px;
+border-radius: 7px;
+margin-left: 20px;
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.create{
+    display: flex;
+}
+.account{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.create p{
+    margin-top: 20px;
+    width: auto;
+    
+    color: blue;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

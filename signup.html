@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-page</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+   
+    <div class="cardholder">
+        <div class="imgcard"><img src="./photo-1581090464777-f3220bbe1b8b.jpg" alt=""></div>
+        <div class="normalcard" id="card">
+            <h1>Welcome to Edutech!</h1>
+            <p>Register your Account</p>
+            
+            
+            
+            <div class="input-group">
+                <label class="label">Name</label>
+                <input type="text" class="input-field" id="name" placeholder="enter your name">
+
+            </div>
+            
+
+            <div class="input-group">
+                <label class="label">Email</label>
+                <input type="email" class="input-field" id="email" placeholder="enter your email">
+
+            </div>
+            
+            
+        
+
+            <div class="input-group">
+                <label class="label">Password</label>
+                <input type="password" class="input-field" id="password" placeholder="enter your password " >
+
+            </div>
+
+            <button class="signup-button" onclick="signUp()">Sign Up</button>
+
+
+            <div class="create">
+                <div class="account">Already have an account?</div>
+                <a href="./login.html"><p class="but">Sign In</p></a>
+            </div>
+
+        </div>
+        
+
+            
+    </div>
+
+
+    <script>
+ function signUp(){
+    const name = document.getElementById('name').value;
+
+
+
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    if(email.includes('@') && email.includes('.', email.indexOf('@'))){
+        const storedEmail = localStorage.getItem(email)
+        if(storedEmail){
+            alert('Email address already exist, please try again');
+        }else {
+            localStorage.setItem(email, password)
+            window.location.href= 'login.html'
+        }
+    }else{
+        alert('invalid email format');
+    }
+
+    
+
+
+
+
+
+
+ }
+    </script>
+</body>
+</html>
