@@ -6,17 +6,18 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color:violet;
+    background-color:rgb(231, 222, 222);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .cardholder{
-    width: 500px;
-    height: 550px;
+    width: 700px;
+    height: 450px;
     background-color: white;
     display: flex;
+    box-shadow: rgba(0,0,0, 0.1)0px 4px 12px;
 }
 .normalcard{
 width: 50%;
@@ -41,13 +42,15 @@ background-color:white;
 }
 
 .input-field{
-    width: 200px;
+    width: 300px;
     height: 30px;
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 7px;
     padding: 5px;
-    outline: 0.5px solid blue;
+    background-color:#E8F0FE;
+    outline: none;
+    border: none;
 
 }
 .label{
@@ -65,14 +68,16 @@ background-color:white;
 }
 
 .login-button{
-    width: 200px;
+    width: 300px;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
     border-radius: 7px;
     padding: 5px;
-    background-color: rgb(161, 157, 157);
-    color: white;
+    background-color:rgb(115, 115, 238);
+    color: black;
+    outline: none;
+    border: none;
 
 }
 

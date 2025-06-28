@@ -46,12 +46,13 @@ margin-bottom: 50px;
 
 
 
-.card{
+.card {
   width: 350px;
   height: 200px;
   background-color: white;
   box-shadow: inset;
   border-radius: 10px;
+
 
 }
 .card1{
