@@ -43,6 +43,7 @@
             const storedPassword = localStorage.getItem(email);
           
             if(storedPassword === password) {
+              alert('login sucessful')
               window.location.href = "welcome.html";
             }else{
               alert('invalid email or password');

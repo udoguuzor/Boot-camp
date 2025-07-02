@@ -15,7 +15,6 @@ body{
 .cardholder{
     width: 700px;
     height: 450px;
-    background-color: white;
     display: flex;
     box-shadow: rgba(0,0,0, 0.1)0px 4px 12px;
 }
@@ -24,12 +23,14 @@ width: 50%;
 height: 100%;
 background-color:white;
 
+
+
 }
 .normalcard h1{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-left: 20px;
 }
 .normalcard p{
@@ -74,19 +75,13 @@ background-color:white;
     margin-left: 20px;
     border-radius: 7px;
     padding: 5px;
-    background-color:rgb(115, 115, 238);
-    color: black;
+    background-color:green;
+    color:white;
     outline: none;
     border: none;
+    font-weight: bold;
 
 }
-
-
-
-
-
-
-
 
 .imgcard{
 width: 50%;
@@ -97,4 +92,86 @@ height: 100%;
 width: 100%;
 height: 100%;
 object-fit: cover;
+}
+
+
+@media (min-width:300px) and (max-width:425px) {
+    .cardholder{
+        width: 100%;
+        height: auto;
+       display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .imgcard{
+        width: 100%;
+        height: auto;
+       
+      
+    }
+
+    .imgcard{
+        width: 100%;
+        height: auto;
+    
+    }
+   .imgcard img{
+    width: 100%;
+    height: 100%;
+    
+
+   }
+
+   .normalcard{
+    width: 100%;
+    
+   }
+
+   .input-field{
+    width: 90%;
+    
+    height: auto;
+   } 
+}
+
+
+@media (min-width:425px) and (max-width:740px) {
+    .cardholder{
+        width: 100%;
+        height: auto;
+       display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .imgcard{
+        width: 100%;
+        height: auto;
+       
+      
+    }
+
+    .imgcard{
+        width: 100%;
+        height: auto;
+    
+    }
+   .imgcard img{
+    width: 100%;
+    height: 100%;
+    
+
+   }
+
+   .normalcard{
+    width: 100%;
+    
+   }
+
+   .input-field{
+    width: 90%;
+    
+    height: auto;
+   } 
 }
